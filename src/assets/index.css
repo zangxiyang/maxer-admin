@@ -1,0 +1,12 @@
+/*! @import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.maxer-admin{
+    @apply text-base font-medium;
+}
