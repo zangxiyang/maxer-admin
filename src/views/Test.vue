@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-import { ref } from 'vue'
+import {reactive, ref} from 'vue'
 import { NButton } from 'naive-ui';
 
 const count = ref(0)
