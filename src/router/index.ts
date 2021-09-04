@@ -9,11 +9,15 @@ import {createRouter, createWebHistory, RouteRecordRaw} from "vue-router";
 const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
-        component: () => import('@/views/Home.vue')
+        redirect: '/dashboard'
     },
     {
-        path: '/test',
-        component: ()=> import('@/views/Test.vue')
+        path: '/auth',
+        component: () => import('@/views/Login.vue')
+    },
+    {
+        path: '/dashboard',
+        component: ()=> import('@/views/Admin.vue')
     }
 ]
 

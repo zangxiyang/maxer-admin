@@ -4,11 +4,13 @@ import { ref } from 'vue'
 defineProps<{ msg: string }>()
 
 const count = ref(0)
+const test = ref(import.meta.env.VITE_APP_NAME)
+
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
-
+  <div class="text-2xl">{{test}}</div>
   <p>
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
