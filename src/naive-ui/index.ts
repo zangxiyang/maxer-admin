@@ -8,10 +8,49 @@
 
 import {
     create,
-    NButton
+    NButton,
+    NLayout,
+    NLayoutSider,
+    NLayoutContent,
+    NH2, NH1, NSpace, NSwitch, NMenu, NConfigProvider, GlobalThemeOverrides, NAvatar
 } from "naive-ui";
 
 export const installNaive = create({
-    components: [NButton]
+    components: [
+        NButton,
+        NLayout,
+        NLayoutSider,
+        NLayoutContent,
+        NH2,
+        NH1,
+        NSpace,
+        NSwitch,
+        NMenu,
+        NConfigProvider,
+        NAvatar
+    ]
 })
+
+export const themeOverrides: GlobalThemeOverrides = {
+    common: {
+        // primaryColor: 'rgba(156,255,177,0.92)'
+    },
+    Menu:{
+        itemTextColor: '#fff',
+        itemTextColorActive: '#333',
+        itemTextColorHover: '#eee',
+        itemColorActive: '#fff',
+        itemTextColorChildActive: '#fff',
+        arrowColor: '#fff',
+        arrowColorChildActive: '#fff',
+        arrowColorHover: '#fff',
+        arrowColorActive: '#fff',
+        itemIconColor: "#fff",
+        itemIconColorHover: '#eee',
+        itemIconColorActive: '#333',
+        itemIconColorChildActive: '#fff'
+
+    }
+
+}
 
