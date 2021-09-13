@@ -5,6 +5,7 @@ import store from '@/store/index'
 import {installNaive} from "@/naive-ui";
 // 引入tailwindCss
 import '@/assets/index.css'
+import 'animate.css'
 
 createApp(App)
     .use(router)

@@ -13,6 +13,7 @@
 <script setup lang="ts">
 import {ref} from "vue";
 import {menuOptions} from "@/config";
+import {NMenu} from "naive-ui";
 
 
 const activeKey = ref(null)

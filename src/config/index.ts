@@ -1,5 +1,3 @@
-import {HomeFilled as Home} from "@vicons/material";
-
 /**
  * @作者: Seale
  * @时间: 2021/9/4
@@ -7,35 +5,24 @@ import {HomeFilled as Home} from "@vicons/material";
  * @说明: 配置类
  * @网站: https://www.imsle.com
  */
-
-
 import {
-    EditFilled,
-    ColorLensFilled,
-    MenuBookTwotone,
-    FormatListBulletedFilled as list,
     CategoryRound as category,
-    ManageAccountsFilled as userManager,
+    ColorLensFilled,
     CommentSharp as comments,
-} from "@vicons/material"
+    EditFilled,
+    FormatListBulletedFilled as list,
+    ManageAccountsFilled as userManager,
+    MenuBookTwotone
+} from "@vicons/material";
 
-import {
-    WechatFilled as wechat
-} from "@vicons/antd"
+import {WechatFilled as wechat} from "@vicons/antd"
 
-import {
-    Donate as donate,
-    FileAltRegular as file,
-} from "@vicons/fa"
+import {Donate as donate, FileAltRegular as file,} from "@vicons/fa"
 
-import {
-    Key as key,
-    AccessibilitySharp as friends,
-    SettingsSharp as setting
-} from "@vicons/ionicons5"
+import {AccessibilitySharp as friends, Key as key, SettingsSharp as setting} from "@vicons/ionicons5"
 
 import {MenuOption, NIcon} from "naive-ui";
-import {Component, h, PropType} from "vue";
+import {Component, h} from "vue";
 import {MenuGroupOption} from "naive-ui/lib/menu/src/interface";
 
 /**
@@ -123,3 +110,7 @@ export const menuOptions: (MenuOption | MenuGroupOption)[] = [
         icon: renderIcon(setting)
     }
 ]
+
+export const baseConfig: baseConfig = {
+    title: 'Maxer'
+}

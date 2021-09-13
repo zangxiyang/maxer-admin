@@ -12,7 +12,19 @@ import {
     NLayout,
     NLayoutSider,
     NLayoutContent,
-    NH2, NH1, NSpace, NSwitch, NMenu, NConfigProvider, GlobalThemeOverrides, NAvatar
+    NH2,
+    NH1,
+    NSpace,
+    NSwitch,
+    NMenu,
+    NConfigProvider,
+    GlobalThemeOverrides,
+    NAvatar,
+    NImage,
+    NIcon,
+    NGrid,
+    NGridItem,
+    NCard, NElement, NEllipsis, NTooltip
 } from "naive-ui";
 
 export const installNaive = create({
@@ -27,7 +39,15 @@ export const installNaive = create({
         NSwitch,
         NMenu,
         NConfigProvider,
-        NAvatar
+        NAvatar,
+        NImage,
+        NIcon,
+        NGrid,
+        NGridItem,
+        NCard,
+        NElement,
+        NEllipsis,
+        NTooltip,
     ]
 })
 

@@ -1,7 +1,7 @@
 <template>
     <div class="admin-wrapper absolute w-screen h-screen">
       <main class="flex w-full h-full overflow-hidden">
-        <aside class="w-1/5">
+        <aside class="lg:w-72 lg:block hidden">
           <div class="aside-header flex items-center pl-4 pr-4">
             <div class="logo text-white text-lg w-full truncate text-center cursor-default select-none">
               Maxer Admin
@@ -12,41 +12,18 @@
                     style="background:transparent">
             <MaxerAsideNav/>
           </n-layout>
-          <footer class="aside-footer flex items-center justify-center cursor-default select-none">
+          <footer class="aside-footer flex items-center pl-12 cursor-default select-none">
             <n-avatar
                 color="rgb(247,247,247,.7)"
                 round
                 :size="42"
             />
-            <span class="text-white text-lg ml-1.5">Seale</span>
+            <span class="text-white text-lg ml-14">Seale</span>
           </footer>
         </aside>
         <main class="flex-1">
           <n-layout :native-scrollbar="false" class="h-full">
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
-            <n-h2>内容</n-h2>
+            <router-view/>
           </n-layout>
         </main>
       </main>
@@ -56,6 +33,7 @@
 <script lang='ts' setup>
 import { reactive, ref } from 'vue'
 import MaxerAsideNav from "@/components/MaxerAsideNav.vue";
+import DefaultAdminLayout from "@/layout/DefaultAdminLayout.vue";
 
 
 
@@ -69,7 +47,7 @@ function countPlus() {
 
 <style lang="scss" scoped>
 $maxerLogoHeight: 70px;
-$maxerAsideFooterHeight: 50px;
+$maxerAsideFooterHeight: 80px;
 .admin-wrapper{
   .aside-header{
     height: $maxerLogoHeight;

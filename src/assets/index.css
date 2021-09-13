@@ -10,3 +10,7 @@ body{
 .maxer-admin{
     @apply text-base font-medium;
 }
+::selection {
+    background: rgba(139, 144, 255, 0.87);
+    color: white;
+}
