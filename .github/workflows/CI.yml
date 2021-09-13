@@ -44,7 +44,7 @@ jobs:
         uses: cross-the-world/ssh-pipeline@master # 使用ssh链接服务器
         with:
           host: ${{ secrets.HOST }}
-          user: ${{ secrets.USERNAME }}
+          user: ${{ secrets.USER }}
           key: ${{ secrets.PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
           script: |
@@ -58,7 +58,7 @@ jobs:
         with:
           REMOTE_HOST: ${{ secrets.HOST }}
           SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-          REMOTE_USER: ${{ secrets.USERNAME }}
+          REMOTE_USER: ${{ secrets.USER }}
           REMOTE_PORT: ${{ secrets.PORT }}
           TARGET: /www/wwwroot/pro.imsle.com
           SOURCE: dist/
