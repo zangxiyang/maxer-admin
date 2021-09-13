@@ -62,5 +62,4 @@ jobs:
           REMOTE_PORT: ${{ secrets.PORT }}
           TARGET: /www/wwwroot/pro.imsle.com
           SOURCE: dist/
-          script: |
-            echo '部署成功'
+      - run: echo '部署成功'
