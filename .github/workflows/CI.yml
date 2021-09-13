@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: VUE3 PARTY SMART CQUT FRONT CI
+name: VUE3.2 MAXER-ADMIN FRONT END CI
 
 # Controls when the action will run. 
 on:
