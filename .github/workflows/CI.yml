@@ -48,19 +48,19 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            cd /www/wwwroot/party.imsle.com
+            cd /www/wwwroot/pro.imsle.com
             echo '清空当前版本'
             rm -rf *
             echo '清空成功'
             echo '开始替换最新版本'
       - name: Deploy for Private
-        uses: easingthemes/ssh-deploy@v2.1.5
+        uses: easingthemes/ssh-deploy@v2.2.11
         with:
           REMOTE_HOST: ${{ secrets.HOST }}
+          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           REMOTE_USER: ${{ secrets.USERNAME }}
           REMOTE_PORT: ${{ secrets.PORT }}
           TARGET: /www/wwwroot/pro.imsle.com
           SOURCE: dist/
-          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           script: |
             echo '部署成功'
