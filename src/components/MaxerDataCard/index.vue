@@ -19,16 +19,29 @@
     </div>
     <template #operation v-if="buttonOptions">
       <div class="operation-group flex pl-3 pr-3 mt-3">
-        <n-button
-            ghost
-            text-color="#fff"
-            color="#fff"
-            size="small"
-            class="mr-3"
-            v-for="item in buttonOptions" :key="item.name"
-            @click="item.callback">
-          {{ item.name }}
-        </n-button>
+        <div class="maxer-opr-btn mr-3" v-for="item in buttonOptions" :key="item.name">
+          <n-badge dot color="white" processing v-if="item.isDot">
+            <n-button
+                ghost
+                text-color="#fff"
+                color="#fff"
+                size="small"
+                @click="item.callback">
+              {{ item.name }}
+            </n-button>
+          </n-badge>
+          <template v-else>
+            <n-button
+                ghost
+                text-color="#fff"
+                color="#fff"
+                size="small"
+                @click="item.callback">
+              {{ item.name }}
+            </n-button>
+          </template>
+        </div>
+
       </div>
     </template>
   </maxer-card>

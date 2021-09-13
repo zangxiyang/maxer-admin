@@ -193,7 +193,8 @@ const buttonFriendsOptions: buttonOption[] = [
     name: '管理'
   },
   {
-    name: '审核'
+    name: '审核申请',
+    isDot: true
   }
 ]
 // 用户按钮配置

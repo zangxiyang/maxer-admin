@@ -5,11 +5,11 @@
  * @说明: 定义的结构体
  * @网站: https://www.imsle.com
  */
-import {Component} from "vue";
 
 export default interface buttonOption{
     name: string
     callback?: Function
+    isDot?: boolean  // 小白点 一闪一闪亮晶晶 (想啥呢~这当然可以为空咯)
     route?: string  // todo router跳转
     link?: string   // todo 外部跳转
 }
