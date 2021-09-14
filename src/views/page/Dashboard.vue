@@ -181,7 +181,7 @@ const buttonCommentsOptions: buttonOption[] = [
     }
   }
 ]
-// 分类按钮配置c
+// 分类按钮配置
 const buttonCateOptions: buttonOption[] = [
   {
     name: '管理'
