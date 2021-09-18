@@ -37,7 +37,8 @@ export const menuOptions: (MenuOption | MenuGroupOption)[] = [
     {
         label: '仪表盘',
         key: 'dashboard',
-        icon: renderIcon(ColorLensFilled)
+        icon: renderIcon(ColorLensFilled),
+        router: '/dashboard'
     },
     {
         label: '博文',
@@ -47,7 +48,8 @@ export const menuOptions: (MenuOption | MenuGroupOption)[] = [
             {
                 label: '撰写博文',
                 key: 'article-editor',
-                icon: renderIcon(EditFilled)
+                icon: renderIcon(EditFilled),
+                router: '/article/editor'
             },
             {
                 label: '文章列表',
@@ -111,6 +113,8 @@ export const menuOptions: (MenuOption | MenuGroupOption)[] = [
     }
 ]
 
-export const baseConfig: baseConfig = {
+
+
+export const baseConfig: BaseConfig = {
     title: 'Maxer'
 }

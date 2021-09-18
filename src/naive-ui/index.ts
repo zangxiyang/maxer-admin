@@ -24,7 +24,7 @@ import {
     NIcon,
     NGrid,
     NGridItem,
-    NCard, NElement, NEllipsis, NTooltip, NBadge
+    NCard, NElement, NEllipsis, NTooltip, NBadge, NTag
 } from "naive-ui";
 
 export const installNaive = create({
@@ -49,6 +49,7 @@ export const installNaive = create({
         NEllipsis,
         NTooltip,
         NBadge,
+        NTag
     ]
 })
 

@@ -15,11 +15,20 @@ const routes: Array<RouteRecordRaw> = [
         children:[
             {
                 path: '/dashboard',
-                component: ()=> import('@/views/page/Dashboard.vue'),
+                component: ()=> import('@/views/page/Dashboard/Dashboard.vue'),
                 meta:{
-                    title: '仪表盘'
+                    title: '仪表盘',
+                    navKey: 'dashboard'
                 }
             },
+            {
+                path: '/article/editor',
+                component: ()=> import('@/views/page/Article/editor/ArticleEditor.vue'),
+                meta:{
+                    title: '撰写博文',
+                    navKey: 'article-editor'
+                }
+            }
         ]
     },
     {

@@ -6,7 +6,8 @@
  * @网站: https://www.imsle.com
  */
 
-interface baseConfig{
+interface BaseConfig {
     // 网站标题
     title?: string
 }
+

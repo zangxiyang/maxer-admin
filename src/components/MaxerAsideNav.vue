@@ -6,17 +6,34 @@
         :collapsed-icon-size="22"
         :options="menuOptions"
         v-model:value="activeKey"
+        @update-value="onActiveMenu"
     />
   </div>
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue";
+import {computed, ref, watch} from "vue";
 import {menuOptions} from "@/config";
-import {NMenu} from "naive-ui";
+import {MenuOption} from "naive-ui";
+import {onBeforeRouteLeave, onBeforeRouteUpdate, useRoute, useRouter} from "vue-router";
+
 
 
 const activeKey = ref(null)
+const router = useRouter();
+const route = useRoute();
+
+const onActiveMenu = (key: string, item: MenuOption) => {
+  router.push(item.router)
+}
+
+// 路由配置 根据当前路由为左侧nav映射
+if (route.meta.navKey){
+  // 防止刷新页面的时候，错位
+  activeKey.value = route.meta.navKey
+}
+
+
 </script>
 
 <style lang="scss" scoped>
