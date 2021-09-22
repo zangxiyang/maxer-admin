@@ -15,16 +15,23 @@
 import {computed, ref, watch} from "vue";
 import {menuOptions} from "@/config";
 import {MenuOption} from "naive-ui";
-import {onBeforeRouteLeave, onBeforeRouteUpdate, useRoute, useRouter} from "vue-router";
+import {
+  onBeforeRouteLeave,
+  onBeforeRouteUpdate,
+  RouteLocationRaw,
+  RouteQueryAndHash,
+  useRoute,
+  useRouter
+} from "vue-router";
 
 
 
-const activeKey = ref(null)
+const activeKey = ref()
 const router = useRouter();
 const route = useRoute();
 
 const onActiveMenu = (key: string, item: MenuOption) => {
-  router.push(item.router)
+  router.push(item.router as RouteLocationRaw)
 }
 
 // 路由配置 根据当前路由为左侧nav映射
