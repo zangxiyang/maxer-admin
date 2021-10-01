@@ -80,7 +80,7 @@
 <script setup lang="ts">
 import DefaultAdminLayout from "@/layout/DefaultAdminLayout.vue";
 import RefreshRound from "@vicons/material/RefreshRound";
-import DataPanel from '@/views/page/Dashboard/DataPanel/index.vue'
+import DataPanel from '@/views/page/Dashboard/DataPanel/DataPanel.vue'
 import {ref} from "vue";
 
 

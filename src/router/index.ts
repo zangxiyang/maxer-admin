@@ -12,6 +12,9 @@ const routes: Array<RouteRecordRaw> = [
         path: '/',
         component: ()=> import('@/views/Admin.vue'),
         redirect: '/dashboard',
+        meta: {
+            navKey: 'dashboard'
+        },
         children:[
             {
                 path: '/dashboard',
@@ -27,6 +30,22 @@ const routes: Array<RouteRecordRaw> = [
                 meta:{
                     title: '撰写博文',
                     navKey: 'article-editor'
+                }
+            },
+            {
+                path: '/article/list',
+                component: ()=> import('@/views/page/Article/list/ArticleList.vue'),
+                meta:{
+                    title: '文章列表',
+                    navKey: 'article-list'
+                }
+            },
+            {
+                path: '/article/cate',
+                component: ()=> import('@/views/page/Article/cate/ArticleCategoryTag.vue'),
+                meta:{
+                    title: '分类の标签',
+                    navKey: 'article-cateAndTag'
                 }
             }
         ]

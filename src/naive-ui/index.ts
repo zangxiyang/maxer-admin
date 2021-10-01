@@ -24,7 +24,7 @@ import {
     NIcon,
     NGrid,
     NGridItem,
-    NCard, NElement, NEllipsis, NTooltip, NBadge, NTag
+    NCard, NElement, NEllipsis, NTooltip, NBadge, NTag, NDataTable
 } from "naive-ui";
 
 export const installNaive = create({
@@ -49,13 +49,25 @@ export const installNaive = create({
         NEllipsis,
         NTooltip,
         NBadge,
-        NTag
+        NTag,
+        NDataTable,
     ]
 })
 
 export const themeOverrides: GlobalThemeOverrides = {
     common: {
-        // primaryColor: 'rgba(156,255,177,0.92)'
+        primaryColor: 'rgb(181,108,230)',
+    },
+    "Button": {
+        "textColorHover": "#AD369FFF",
+        "textColorPressed": "#7A0C71FF",
+        "textColorFocus": "#7A0C71FF",
+        "textColorTextHover": "#8D36ADFF",
+        "textColorTextPressed": "#6D0C7AFF",
+        "textColorTextFocus": "#6D0C7AFF",
+        "borderHover": "1px solid #AD369FFF",
+        "borderFocus": "1px solid #AD369FFF",
+        "borderPressed": "1px solid #6D0C7AFF"
     },
     Menu:{
         itemTextColor: '#fff',

@@ -1,7 +1,7 @@
 <template>
-  <default-admin-layout>
-    <br><br><br><br><br>
-  </default-admin-layout>
+<default-admin-layout>
+  分类标签
+</default-admin-layout>
 </template>
 
 <script setup lang="ts">

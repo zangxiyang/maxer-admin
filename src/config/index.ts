@@ -46,20 +46,22 @@ export const menuOptions: (MenuOption | MenuGroupOption)[] = [
         icon: renderIcon(MenuBookTwotone),
         children: [
             {
+                label: '文章列表',
+                key: 'article-list',
+                icon: renderIcon(list),
+                router: '/article/list'
+            },
+            {
                 label: '撰写博文',
                 key: 'article-editor',
                 icon: renderIcon(EditFilled),
                 router: '/article/editor'
             },
             {
-                label: '文章列表',
-                key: 'article-list',
-                icon: renderIcon(list)
-            },
-            {
                 label: '分类の标签',
                 key: 'article-cateAndTag',
-                icon: renderIcon(category)
+                icon: renderIcon(category),
+                router: '/article/cate'
             },
         ]
     },
