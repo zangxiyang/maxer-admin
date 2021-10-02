@@ -40,7 +40,7 @@ import DefaultAdminLayout from "@/layout/DefaultAdminLayout.vue";
 import Add from '@vicons/material/AddOutlined'
 import Delete from '@vicons/material/DeleteFilled'
 import {h, reactive, ref} from "vue";
-import {NButton, NEllipsis} from "naive-ui";
+import {NButton, NEllipsis,NTooltip} from "naive-ui";
 
 // 选中的行
 const checkedRowKeys = ref([]);

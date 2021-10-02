@@ -78,6 +78,7 @@ import MaxerDataCard from "@/components/MaxerDataCard/index.vue";
 // 文章按钮配置
 import buttonOption from "@/components/MaxerDataCard/Interface";
 import {ref} from "vue";
+import {NTooltip} from "naive-ui";
 
 
 const refreshLoading = ref(false);
