@@ -57,6 +57,8 @@ export const installNaive = create({
 export const themeOverrides: GlobalThemeOverrides = {
     common: {
         primaryColor: 'rgb(181,108,230)',
+        "primaryColorHover": "#AD36A9FF",
+        "primaryColorPressed": "#7A0C64FF"
     },
     "Button": {
         "textColorHover": "#AD369FFF",

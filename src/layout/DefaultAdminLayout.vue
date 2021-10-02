@@ -4,7 +4,7 @@
       <h2 class="text-2xl select-none cursor-default">
         {{ title }}
       </h2>
-      <div class="header-right-container">
+      <div class="header-right-container flex items-center">
         <slot name="head-right"/>
       </div>
     </div>

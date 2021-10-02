@@ -12,18 +12,10 @@
 </template>
 
 <script setup lang="ts">
-import {computed, ref, watch} from "vue";
+import {ref} from "vue";
 import {menuOptions} from "@/config";
 import {MenuOption} from "naive-ui";
-import {
-  onBeforeRouteLeave,
-  onBeforeRouteUpdate,
-  RouteLocationRaw,
-  RouteQueryAndHash,
-  useRoute,
-  useRouter
-} from "vue-router";
-
+import {RouteLocationRaw, useRoute, useRouter} from "vue-router";
 
 
 const activeKey = ref()
