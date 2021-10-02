@@ -61,7 +61,7 @@ const columns = [
       tooltip: true
     },
     render: (row)=>{
-      if (row.title.length > 16){
+      if (row.title.length > 20){
         return h(
             NButton,
             {
