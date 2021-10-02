@@ -23,42 +23,46 @@
       <v-md-editor v-model="text" height="550px"></v-md-editor>
     </div>
     <div class="other-info mt-8 border-dashed border-2 border-gray-200 p-3 rounded-lg">
-      <n-grid :y-gap="10" :x-gap="10" :cols="2">
-        <n-row class="items-center">
-          <n-col :span="3">
-            <span class="title select-none flex justify-end mr-2">分类</span>
-          </n-col>
-          <n-col :span="21">
-            <n-select v-model:value="cate" :options="cateOptions"/>
-          </n-col>
-        </n-row>
 
-        <n-row class="items-center">
-          <n-col :span="3">
-            <span class="title select-none flex justify-end mr-2">标签</span>
-          </n-col>
-          <n-col :span="21">
-            <n-dynamic-tags v-model:value="tags"/>
-          </n-col>
-        </n-row>
-
-        <n-row class="items-center">
-          <n-col :span="3">
-            <span class="title select-none flex justify-end mr-2">头图地址</span>
-          </n-col>
-          <n-col :span="21">
-            <n-input placeholder="请输入头图地址">
-              <template #prefix>
-                <n-icon>
-                  <icon-image/>
-                </n-icon>
-              </template>
-            </n-input>
-          </n-col>
-        </n-row>
-
-
+      <n-grid :y-gap="10" :x-gap="10" :cols="2" class="items-center">
+        <n-grid-item>
+          <n-grid :cols="24" class="items-center">
+            <n-grid-item :span="3">
+              <span class="title select-none flex justify-end mr-2">分类</span>
+            </n-grid-item>
+            <n-grid-item :span="21">
+              <n-select v-model:value="cate" :options="cateOptions"/>
+            </n-grid-item>
+          </n-grid>
+        </n-grid-item>
+        <n-grid-item>
+          <n-grid :cols="24" class="items-center">
+            <n-grid-item :span="3">
+              <span class="title select-none flex justify-end mr-2">标签</span>
+            </n-grid-item>
+            <n-grid-item :span="21">
+              <n-dynamic-tags v-model:value="tags"/>
+            </n-grid-item>
+          </n-grid>
+        </n-grid-item>
+        <n-grid-item>
+          <n-grid :cols="24" class="items-center">
+            <n-grid-item :span="3">
+              <span class="title select-none flex justify-end mr-2">头图地址</span>
+            </n-grid-item>
+            <n-grid-item :span="21">
+              <n-input placeholder="请输入头图地址">
+                <template #prefix>
+                  <n-icon>
+                    <icon-image/>
+                  </n-icon>
+                </template>
+              </n-input>
+            </n-grid-item>
+          </n-grid>
+        </n-grid-item>
       </n-grid>
+
 
     </div>
 

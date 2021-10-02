@@ -5,27 +5,20 @@
  * @说明: NaiveUI 全局按需引入
  * @网站: https://www.imsle.com
  */
-
 import {
-    create,
-    NButton,
-    NLayout,
-    NLayoutSider,
-    NLayoutContent,
-    NH2,
+    create, GlobalThemeOverrides, NAvatar, NBadge,
+    NButton, NCard, NCol,
+    NConfigProvider, NDataTable, NDynamicTags, NElement, NEllipsis, NGrid, NGridItem,
     NH1,
+    NH2, NIcon, NImage, NInput,
+    NLayout,
+    NLayoutContent,
+    NLayoutSider,
+    NMenu, NRow, NSelect,
     NSpace,
-    NSwitch,
-    NMenu,
-    NConfigProvider,
-    GlobalThemeOverrides,
-    NAvatar,
-    NImage,
-    NIcon,
-    NGrid,
-    NGridItem,
-    NCard, NElement, NEllipsis, NTooltip, NBadge, NTag, NDataTable, NInput, NSelect, NRow, NCol, NDynamicTags
+    NSwitch, NTag, NTooltip
 } from "naive-ui";
+
 
 export const installNaive = create({
     components: [

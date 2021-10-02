@@ -57,9 +57,7 @@ const columns = [
   },
   {
     title: '文章标题',
-    ellipsis: {
-      tooltip: true
-    },
+    key: 'title',
     render: (row)=>{
       if (row.title.length > 20){
         return h(
