@@ -82,6 +82,7 @@ import DefaultAdminLayout from "@/layout/DefaultAdminLayout.vue";
 import RefreshRound from "@vicons/material/RefreshRound";
 import DataPanel from '@/views/page/Dashboard/DataPanel/DataPanel.vue'
 import {ref} from "vue";
+import {NTooltip} from "naive-ui";
 
 
 /********************************* 定义响应变量 *********************************/

@@ -78,6 +78,8 @@ import RefreshRound from "@vicons/material/RefreshRound";
 import MaxerDataCard from "@/components/MaxerDataCard/index.vue";
 // 文章按钮配置
 import buttonOption from "@/components/MaxerDataCard/Interface";
+
+import {NTooltip} from "naive-ui";
 import {ref} from "vue";
 
 
