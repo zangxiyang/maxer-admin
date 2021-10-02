@@ -68,7 +68,6 @@
 <script setup lang="ts">
 // 引入图标
 import BookFilled from '@vicons/antd/BookFilled'
-import WechatFilled from "@vicons/antd/WechatFilled";
 import CommentSharp from "@vicons/material/CommentSharp";
 import CategoryRound from "@vicons/material/CategoryRound";
 import AccessibilitySharp from "@vicons/ionicons5/AccessibilitySharp"
@@ -78,8 +77,6 @@ import RefreshRound from "@vicons/material/RefreshRound";
 import MaxerDataCard from "@/components/MaxerDataCard/index.vue";
 // 文章按钮配置
 import buttonOption from "@/components/MaxerDataCard/Interface";
-
-import {NTooltip} from "naive-ui";
 import {ref} from "vue";
 
 

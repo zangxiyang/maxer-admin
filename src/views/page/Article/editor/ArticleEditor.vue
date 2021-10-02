@@ -72,8 +72,7 @@ import DefaultAdminLayout from "@/layout/DefaultAdminLayout.vue";
 import ArticleOutlined from "@vicons/material/ArticleOutlined";
 import IconImage from "@vicons/fa/Image";
 import PaperPlane from "@vicons/ionicons5/PaperPlane";
-import {reactive, ref} from "vue";
-import {NInput,NTooltip} from "naive-ui";
+import {ref} from "vue";
 
 
 const text = ref('');
