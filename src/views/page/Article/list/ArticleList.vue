@@ -41,6 +41,10 @@ import Add from '@vicons/material/AddOutlined'
 import Delete from '@vicons/material/DeleteFilled'
 import {h, reactive, ref} from "vue";
 import {NButton, NEllipsis,NTooltip} from "naive-ui";
+import {useRouter} from "vue-router";
+
+
+const router = useRouter();
 
 // 选中的行
 const checkedRowKeys = ref([]);
@@ -63,7 +67,11 @@ const columns = [
         return h(
             NButton,
             {
-              text: true
+              text: true,
+              onClick: ()=>{
+                // TODO 需要传参 跳转到修改博文
+                router.push("/article/modify")
+              }
             },
             [
               h(

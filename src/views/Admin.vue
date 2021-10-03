@@ -22,7 +22,7 @@
           </footer>
         </aside>
         <main class="flex-1">
-          <n-layout :native-scrollbar="false" class="h-full">
+          <n-layout :native-scrollbar="false" class="h-full" ref="content">
             <router-view/>
           </n-layout>
         </main>
@@ -34,8 +34,18 @@
 import { reactive, ref } from 'vue'
 import MaxerAsideNav from "@/components/MaxerAsideNav.vue";
 import DefaultAdminLayout from "@/layout/DefaultAdminLayout.vue";
+import {useRouter} from "vue-router";
 
 
+const content = ref();
+const router = useRouter();
+router.beforeEach((to, from, next) => {
+  // 切换路由页面的时候，使页面置顶
+  next();
+  content.value.scrollTo({
+    top: 0
+  })
+})
 
 
 

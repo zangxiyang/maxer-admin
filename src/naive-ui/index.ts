@@ -16,7 +16,7 @@ import {
     NLayoutSider,
     NMenu, NRow, NSelect,
     NSpace,
-    NSwitch, NTag, NTooltip
+    NSwitch, NTabPane, NTabs, NTag, NTooltip
 } from "naive-ui";
 
 
@@ -49,6 +49,8 @@ export const installNaive = create({
         NRow,
         NCol,
         NDynamicTags,
+        NTabs,
+        NTabPane,
     ]
 })
 

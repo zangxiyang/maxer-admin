@@ -33,6 +33,14 @@ const routes: Array<RouteRecordRaw> = [
                 }
             },
             {
+                path: '/article/modify',
+                component: ()=> import('@/views/page/Article/editor/ArticleModify.vue'),
+                meta:{
+                    title: '修改博文',
+                    navKey: 'article-list'
+                }
+            },
+            {
                 path: '/article/list',
                 component: ()=> import('@/views/page/Article/list/ArticleList.vue'),
                 meta:{
