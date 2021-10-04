@@ -87,6 +87,7 @@ import {h, reactive, ref} from "vue";
 import Delete from '@vicons/material/DeleteFilled'
 import Add from '@vicons/material/AddOutlined'
 import {NButton, NEllipsis, NTag,NTooltip} from "naive-ui";
+import {ITagData} from "@/views/page/Article/cate/interface";
 
 // tab active
 const tabActive = ref('cate');
@@ -216,7 +217,7 @@ const pagination = reactive({
 
 
 // 标签
-const tagData = ref([]);
+const tagData = ref<ITagData[]>([]);
 
 for (let i = 0 ; i < 20; i ++){
   tagData.value.push({
