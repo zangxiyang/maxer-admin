@@ -62,8 +62,12 @@
       />
     </n-tab-pane>
     <n-tab-pane name="tag" tab="标签">
+      <div class="flex items-center justify-end mb-3">
+        <NButton size="small" dashed @click="onTagAllSelectButtonClick">全选</NButton>
+      </div>
       <div class="tag-wrapper flex flex-wrap">
         <n-tag v-for="item in tagData"
+               class="mb-3 mr-3"
                :key="item.id"
                checkable
                closable
@@ -219,6 +223,12 @@ for (let i = 0 ; i < 20; i ++){
     id: i,
     text: `${i}号标签`,
     checked: false
+  })
+}
+// 全选按钮
+const onTagAllSelectButtonClick = ()=>{
+  tagData.value.forEach(item=>{
+    item.checked = !item.checked;
   })
 }
 </script>
