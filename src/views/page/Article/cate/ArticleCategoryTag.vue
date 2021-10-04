@@ -63,7 +63,14 @@
     </n-tab-pane>
     <n-tab-pane name="tag" tab="标签">
       <div class="flex items-center justify-end mb-3">
-        <NButton size="small" dashed @click="onTagAllSelectButtonClick">全选</NButton>
+        <NButton size="small" dashed @click="onTagAllSelectButtonClick">
+          <template v-if="tagAllSelectStatus">
+            取消全选
+          </template>
+          <template v-else>
+            全选
+          </template>
+        </NButton>
       </div>
       <div class="tag-wrapper flex flex-wrap">
         <n-tag v-for="item in tagData"
@@ -227,10 +234,19 @@ for (let i = 0 ; i < 20; i ++){
   })
 }
 // 全选按钮
+const tagAllSelectStatus = ref(false)
 const onTagAllSelectButtonClick = ()=>{
-  tagData.value.forEach(item=>{
-    item.checked = !item.checked;
-  })
+  if (tagAllSelectStatus.value){
+    tagData.value.forEach(item=>{
+      item.checked = false;
+    })
+  }else{
+    tagData.value.forEach(item => {
+      item.checked = true;
+    })
+  }
+  // 更改当前按钮状态
+  tagAllSelectStatus.value = !tagAllSelectStatus.value;
 }
 </script>
 
