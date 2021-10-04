@@ -51,6 +51,7 @@ export const installNaive = create({
         NDynamicTags,
         NTabs,
         NTabPane,
+        NSwitch,
     ]
 })
 
@@ -85,7 +86,10 @@ export const themeOverrides: GlobalThemeOverrides = {
         itemIconColorHover: '#eee',
         itemIconColorActive: '#333',
         itemIconColorChildActive: '#fff'
-
+    },
+    "Switch": {
+        "railColorActive": "#07A307FF",
+        "boxShadowFocus": "none"
     }
 
 }

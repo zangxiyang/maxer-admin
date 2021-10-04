@@ -55,6 +55,22 @@ const routes: Array<RouteRecordRaw> = [
                     title: '分类の标签',
                     navKey: 'article-cateAndTag'
                 }
+            },
+            {
+                path: '/user/list',
+                component: ()=> import('@/views/page/User/list/UserList.vue'),
+                meta: {
+                    title: '用户列表',
+                    navKey: 'user-list'
+                }
+            },
+            {
+                path: '/user/auth',
+                component: ()=> import('@/views/page/User/auth/UserAuth.vue'),
+                meta: {
+                    title: '用户权限',
+                    navKey: 'user-auth'
+                }
             }
         ]
     },

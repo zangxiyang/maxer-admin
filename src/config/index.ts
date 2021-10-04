@@ -73,12 +73,14 @@ export const menuOptions: (MenuOption | MenuGroupOption)[] = [
             {
                 label: '用户列表',
                 key: 'user-list',
-                icon: renderIcon(list)
+                icon: renderIcon(list),
+                router: '/user/list'
             },
             {
                 label: '权限管理',
                 key: 'user-auth',
-                icon: renderIcon(key)
+                icon: renderIcon(key),
+                router: '/user/auth'
             }
         ]
     },
