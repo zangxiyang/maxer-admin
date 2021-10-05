@@ -62,10 +62,10 @@ const columns = [
               h('span',null,`${row.content.date} 于 ${row.content.article}`),
               h('span',{class: 'mt-1'},`${row.content.text}`),
               h('div', {class: 'flex item-center mt-1'}, [
-                  h('span',{}, '通过'),
-                  h('span',{}, '标记为垃圾'),
-                  h('span',{}, '回复'),
-                  h('span',{}, '删除'),
+                  h('span',{class: 'mr-2'}, '通过'),
+                  h('span',{class: 'mr-2'}, '垃圾'),
+                  h('span',{class: 'mr-2'}, '回复'),
+                  h('span',{class: 'mr-2'}, '删除'),
               ])
           ]
       )
