@@ -88,6 +88,7 @@ export const menuOptions: (MenuOption | MenuGroupOption)[] = [
         label: '评论',
         key: 'comments',
         icon: renderIcon(comments),
+        router: '/comments'
     },
     {
         label: '微聊',

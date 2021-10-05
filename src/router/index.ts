@@ -71,6 +71,14 @@ const routes: Array<RouteRecordRaw> = [
                     title: '用户权限',
                     navKey: 'user-auth'
                 }
+            },
+            {
+                path: '/comments',
+                component: ()=> import('@/views/page/Comments/Comments.vue'),
+                meta: {
+                    title: '评论管理',
+                    navKey: 'comments'
+                }
             }
         ]
     },

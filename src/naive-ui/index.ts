@@ -8,7 +8,7 @@
 import {
     create, GlobalThemeOverrides, NAvatar, NBadge,
     NButton, NCard, NCol,
-    NConfigProvider, NDataTable, NDynamicTags, NElement, NEllipsis, NGrid, NGridItem,
+    NConfigProvider, NDataTable, NDynamicTags, NElement, NEllipsis, NEmpty, NGrid, NGridItem,
     NH1,
     NH2, NIcon, NImage, NInput,
     NLayout,
@@ -52,6 +52,7 @@ export const installNaive = create({
         NTabs,
         NTabPane,
         NSwitch,
+        NEmpty,
     ]
 })
 
