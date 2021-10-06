@@ -53,7 +53,7 @@ switch (props.size) {
     padding.value = '3px 5px';
     break;
   case 'small':
-    padding.value = '1px 5px';
+    padding.value = '0 5px';
     break;
 }
 </script>
