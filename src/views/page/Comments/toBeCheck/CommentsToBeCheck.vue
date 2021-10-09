@@ -48,6 +48,40 @@ const columns = [
   {
     title: '用户名',
     key: 'userName',
+    render: (row)=>{
+      return h(
+        'div',
+          {
+            class: 'flex flex-col select-none'
+          },
+          [
+              h(
+                  'span',
+                  {
+                    class: 'user',
+                    style: 'color: rgb(161,74,252);'
+                  },
+                  row.userName
+              ),
+              h(
+                  'span',
+                  {
+                    class: 'mail',
+                    style: 'color: rgb(161,74,252);'
+                  },
+                  row.mail
+              ),
+              h(
+                  'span',
+                  {
+                    class: 'ip',
+                    style: 'color: rgb(163,163,163);'
+                  },
+                  row.ip
+              )
+          ]
+      );
+    }
   },
   {
     title: '内容',
@@ -80,6 +114,8 @@ for (let i = 0 ; i < 100; i ++){
   data.push({
     key: i,
     userName: `用户 ${i}`,
+    mail: '1801157108@qq.com',
+    ip: '111.111.111.111',
     content: {
       date: '3天前',
       article: '哪篇文章',
